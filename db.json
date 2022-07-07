@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Talk to Amith",
+      "day": "08/07/2022 2:30pm",
+      "done": true
+    },
+    {
+      "id": 2,
+      "text": "Build pt-app",
+      "day": "09/07/2022  5:30pm",
+      "done": false
+    },
+    {
+      "text": "File ITR",
+      "day": "09/07/2022 10:00am",
+      "done": false,
+      "id": 3
+    }
+  ]
+}
