@@ -1,2 +1,2 @@
 # Task tracker application
-![](images/TodoApp.PNG?raw=true "LandingPage")
+![](images/TodoApp.png?raw=true "LandingPage")
