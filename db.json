@@ -4,7 +4,7 @@
       "id": 1,
       "text": "Talk to Amith",
       "day": "08/07/2022 2:30pm",
-      "done": true
+      "done": false
     },
     {
       "id": 2,
@@ -15,8 +15,14 @@
     {
       "text": "File ITR",
       "day": "09/07/2022 10:00am",
-      "done": false,
+      "done": true,
       "id": 3
+    },
+    {
+      "text": "Pack bags for trip",
+      "day": "08/07/2022",
+      "done": false,
+      "id": 4
     }
   ]
 }

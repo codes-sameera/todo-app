@@ -21,13 +21,13 @@ function App() {
   }, [])
 
   const fetchTasks = async () => {
-    const res = await fetch('http://localhost:5000/tasks')
+    const res = await fetch(`${process.env.REACT_APP_SERVER_URL}/tasks`)
     const data = await res.json()
     return data
   }
 
   const fetchTask = async (id) => {
-    const res = await fetch(`http://localhost:5000/tasks/${id}`)
+    const res = await fetch(`${process.env.REACT_APP_SERVER_URL}/tasks/${id}`)
     const data = await res.json()
     return data
   }
@@ -38,7 +38,7 @@ function App() {
 
   const addTask = async (task) => {
     const res = await fetch(
-      'http://localhost:5000/tasks/',
+      `${process.env.REACT_APP_SERVER_URL}/tasks/`,
       {
         method: 'POST',
         headers: {
@@ -53,7 +53,7 @@ function App() {
 
   const deleteTask = async (id) => {
     await fetch(
-      `http://localhost:5000/tasks/${id}`,
+      `${process.env.REACT_APP_SERVER_URL}/tasks/${id}`,
       {
         method: 'DELETE'
       }
@@ -65,7 +65,7 @@ function App() {
     const taskToToggle = await fetchTask(id)
     const updatedTask = { ...taskToToggle, done: !taskToToggle.done }
     const res = await fetch(
-      `http://localhost:5000/tasks/${id}`,
+      `${process.env.REACT_APP_SERVER_URL}/tasks/${id}`,
       {
         method: 'PUT',
         headers: {
@@ -80,7 +80,7 @@ function App() {
 
   const editTask = async (task) => {
     const res = await fetch(
-      `http://localhost:5000/tasks/${task.id}`,
+      `${process.env.REACT_APP_SERVER_URL}/tasks/${task.id}`,
       {
         method: 'PUT',
         headers: {
