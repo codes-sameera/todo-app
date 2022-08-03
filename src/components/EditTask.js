@@ -44,7 +44,10 @@ const EditTask = ({ task, onEdit, onUpdateClicked }) => {
           onChange={(e) => setDone(e.currentTarget.checked)}
         />
       </div>
-      <input className="btn btn-block" type="submit" value="Update Task" />
+      <div>
+        <input className="btn btn-block" type="submit" value="Update Task" />
+        <br />
+      </div>
     </form>
   );
 };

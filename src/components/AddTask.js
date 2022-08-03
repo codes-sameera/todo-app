@@ -49,7 +49,10 @@ const AddTask = ({ onAdd }) => {
           onChange={(e) => setDone(e.currentTarget.checked)}
         />
       </div>
-      <input className="btn btn-block" type="submit" value="Save Task" />
+      <div>
+        <input className="btn btn-block" type="submit" value="Save Task" />
+        <br />
+      </div>
     </form>
   );
 };
