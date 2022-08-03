@@ -16,6 +16,7 @@ function App() {
       const tasks = await fetchTasks();
       setTasks(tasks);
     };
+    //test commit
     getTasks();
   }, []);
 
